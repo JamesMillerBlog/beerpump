@@ -9,7 +9,6 @@ This is a tutorial on how to set up the beer pump hardware and software.
 4. How to operate
 5. How to integrate software into the front end and hardware into the beer font
 6. Troubleshooting
-7. How to contact James
 
 ## 1. Code set up ##
 
@@ -32,12 +31,10 @@ Either click the download file above.
 
 ### Setup dependencies ###
 
-![Screen Shot 2016-11-17 at 10.47.54.png](https://bitbucket.org/repo/oEGoyq/images/3034839866-Screen%20Shot%202016-11-17%20at%2010.47.54.png)
 
 * Install the latest version of Node onto your computer, older versions may not be able to run the dependencies needed to make the application work.
 
 
-![Screen Shot 2016-11-17 at 10.18.44.png](https://bitbucket.org/repo/oEGoyq/images/1490172828-Screen%20Shot%202016-11-17%20at%2010.18.44.png)
 
 * Open Terminal from the applications folder
 
@@ -97,7 +94,7 @@ gulp
 ### Electronics ###
 
 The below diagram is the electronic schematic for how to set up Arduino A which controls the valve, water flow meter + the payment LED Strip and Arduino B which controls the LED ring for the beer mat.
-![Schematic.jpg](https://bitbucket.org/repo/oEGoyq/images/2391534317-Schematic.jpg)
+![Schematic.jpg](https://imgur.com/bHN4xqd)
 **Arduino A**
 
 * The flow meter (pictured as a potentiometer) has three wires that connects to red to 5v; black to ground and yellow to pin 2.
@@ -116,11 +113,9 @@ The below diagram is the electronic schematic for how to set up Arduino A which 
 
 ### Connecting up the beer keg with the font. ###
 
-![PastedGraphic-1.jpg](https://bitbucket.org/repo/oEGoyq/images/3734832017-PastedGraphic-1.jpg)
+The below image shows the order of how the beer serving equipment is set up, instructions to set this up are as below.
 
-The above image shows the order of how the beer serving equipment is set up, instructions to set this up are as below.
-
-![beerSetup.jpg](https://bitbucket.org/repo/oEGoyq/images/1047563606-beerSetup.jpg)
+![beerSetup.jpg](https://imgur.com/ncg0RP7)
 
 1. Make sure the gas bottle is closed by turning the handle on top clockwise.
 2. Connect the gas bottle with an attached regulator to the keg, via the keg coupler. This is done by screwing the keg coupler down clockwise and then pressing the handle down to secure it firmly onto the keg.
@@ -129,16 +124,12 @@ The above image shows the order of how the beer serving equipment is set up, ins
 
 ### Interfacing the electronic hardware with the beer font ###
 
-![beertap.jpeg](https://bitbucket.org/repo/oEGoyq/images/3161374165-beertap.jpeg)
-
-The above sketch shows the location of where the electronic hardware interfaces with the beer serving equipment.
-
 * The liquid flow meter and electronic valve are attached to the beer line in between the cooler and the beer font.
 * The liquid flow meter must be placed before before the valve, to help prevent dripping of left over beer that is left between the valve and beer font nozzle when a pint has finished pouring.
 
 ### How to serve beer through the font ###
 
-![beerPour.jpg](https://bitbucket.org/repo/oEGoyq/images/1444141787-beerPour.jpg)
+![beerPour.jpg](https://imgur.com/HKWjPf7)
 
 1. Make sure the cooler is filled with water, if it is not then pour water through the hole on the top and make sure there is an empty bowl underneath the black pipe located at the back of the cooler. Plug the power supply of the cooler into the wall to switch it on, the cooler will start making a fan sound and water will start to slowly trickle (periodically) from the black pipe.
 2. Turn the handle of the gas bottle anti-clockwise to allow gas to pressurise the beer keg.
@@ -189,7 +180,7 @@ Making changes to the code is made very simple, as gulp has been configured to a
 
 ### Which sockets to integrate into the front end ###
 
-![adminSocketsToUse.jpg](https://bitbucket.org/repo/oEGoyq/images/3494045358-adminSocketsToUse.jpg)
+![adminSocketsToUse.jpg](https://imgur.com/diLeabu)
 
 The only sockets that should be included in the front end for the touch screen are the 4 circled in the above image from the admin page, and they should only be called in the user journey as numbered (call the socket attached to the "Payment blink" button when a payment is required, then call the socket attached to the "Beer mat blink" button when the user needs to put their beer on the mat, etc).
 
