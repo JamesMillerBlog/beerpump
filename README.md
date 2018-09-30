@@ -41,7 +41,7 @@ Either click the download file above.
 
 
 ```
-#!terminal
+#! terminal
 sudo npm install gulp -g
 ```
 
@@ -50,7 +50,7 @@ sudo npm install gulp -g
 
 
 ```
-#!terminal
+#! terminal
 cd {YOUR/PATH/}
 ```
 
@@ -58,7 +58,7 @@ cd {YOUR/PATH/}
 
 
 ```
-#!terminal
+#! terminal
 sudo npm install
 ```
 * Type "sudo npm install" and press enter, this will install all necessary dependencies to run the application.
@@ -71,7 +71,7 @@ sudo npm install
 
 
 ```
-#!terminal
+#! terminal
 gulp
 ```
 
@@ -94,7 +94,7 @@ gulp
 ### Electronics ###
 
 The below diagram is the electronic schematic for how to set up Arduino A which controls the valve, water flow meter + the payment LED Strip and Arduino B which controls the LED ring for the beer mat.
-![Schematic.jpg](https://imgur.com/bHN4xqd)
+![Schematic.jpg](https://i.imgur.com/bHN4xqd.jpg)
 **Arduino A**
 
 * The flow meter (pictured as a potentiometer) has three wires that connects to red to 5v; black to ground and yellow to pin 2.
