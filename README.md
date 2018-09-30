@@ -167,7 +167,7 @@ The above sketch shows the location of where the electronic hardware interfaces 
 
 As well as the override commands, there is a "Clean Out Pipes" function that pours 100ml of beer, this should be used when the beer pump has not been used for an hour or so - to help prevent foam.
 
-## How to integrate software and hardware ##
+## 5. How to integrate software and hardware ##
 
 Making changes to the code is made very simple, as gulp has been configured to auto refresh the server and re-serve the html/css/js files every time a change has been made. Prior to making any changes, please make sure that gulp is running by following the steps in section 1 of this tutorial.
 
