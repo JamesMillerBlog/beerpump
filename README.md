@@ -27,7 +27,7 @@ The whole application is wrapped up inside of a gulp task management system, whi
 
 ### Downloading the code ###
 
-Either click the download file above.
+Download this repository to a folder on your computer.
 
 ### Setup dependencies ###
 
@@ -41,7 +41,6 @@ Either click the download file above.
 
 
 ```
-#! terminal
 sudo npm install gulp -g
 ```
 
@@ -50,7 +49,6 @@ sudo npm install gulp -g
 
 
 ```
-#! terminal
 cd {YOUR/PATH/}
 ```
 
@@ -58,7 +56,6 @@ cd {YOUR/PATH/}
 
 
 ```
-#! terminal
 sudo npm install
 ```
 * Type "sudo npm install" and press enter, this will install all necessary dependencies to run the application.
@@ -71,7 +68,6 @@ sudo npm install
 
 
 ```
-#! terminal
 gulp
 ```
 
@@ -115,7 +111,7 @@ The below diagram is the electronic schematic for how to set up Arduino A which 
 
 The below image shows the order of how the beer serving equipment is set up, instructions to set this up are as below.
 
-![beerSetup.jpg](https://imgur.com/ncg0RP7)
+![beerSetup.jpg](https://i.imgur.com/ncg0RP7.jpg)
 
 1. Make sure the gas bottle is closed by turning the handle on top clockwise.
 2. Connect the gas bottle with an attached regulator to the keg, via the keg coupler. This is done by screwing the keg coupler down clockwise and then pressing the handle down to secure it firmly onto the keg.
@@ -129,7 +125,7 @@ The below image shows the order of how the beer serving equipment is set up, ins
 
 ### How to serve beer through the font ###
 
-![beerPour.jpg](https://imgur.com/HKWjPf7)
+![beerPour.jpg](https://i.imgur.com/HKWjPf7.jpg)
 
 1. Make sure the cooler is filled with water, if it is not then pour water through the hole on the top and make sure there is an empty bowl underneath the black pipe located at the back of the cooler. Plug the power supply of the cooler into the wall to switch it on, the cooler will start making a fan sound and water will start to slowly trickle (periodically) from the black pipe.
 2. Turn the handle of the gas bottle anti-clockwise to allow gas to pressurise the beer keg.
@@ -180,7 +176,7 @@ Making changes to the code is made very simple, as gulp has been configured to a
 
 ### Which sockets to integrate into the front end ###
 
-![adminSocketsToUse.jpg](https://imgur.com/diLeabu)
+![adminSocketsToUse.jpg](https://i.imgur.com/diLeabu.jpg)
 
 The only sockets that should be included in the front end for the touch screen are the 4 circled in the above image from the admin page, and they should only be called in the user journey as numbered (call the socket attached to the "Payment blink" button when a payment is required, then call the socket attached to the "Beer mat blink" button when the user needs to put their beer on the mat, etc).
 
