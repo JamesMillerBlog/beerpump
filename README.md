@@ -11,7 +11,7 @@ This is a tutorial on how to set up the beer pump hardware and software.
 6. Troubleshooting
 7. How to contact James
 
-##1. Code set up ##
+## 1. Code set up ##
 
 ### Code logic ###
 
@@ -81,7 +81,7 @@ gulp
 * Type "gulp" into the terminal window, after a few seconds it will launch the application and open a web page. The opened web page is the touch screen interface which will need integrating with the front end, to access the admin page add the string "/admin" at the end of the url.
 
 
-##2. Hardware set up ##
+## 2. Hardware set up ##
 
 ### The Arduino code ###
 *All the logic for the Arduino's are controlled in the node application above that you just installed, the code on the Arduino's allow the javascript application to send commands through the serial ports for the Arduino's to follow.*
@@ -112,7 +112,7 @@ The below diagram is the electronic schematic for how to set up Arduino A which 
 
 **IMPORTANT: **A 12v power supply is attached to Arduino A's power jack, this raw supply line comes out of the V-in pin. Do not put anything that is powered by 5 volts on this line and do not attach this 12v line to any of the other Arduino pins or the 5v power supply.
 
-##3. Beer equipment set up ##
+## 3. Beer equipment set up ##
 
 ### Connecting up the beer keg with the font. ###
 
@@ -150,7 +150,7 @@ The above sketch shows the location of where the electronic hardware interfaces 
 2. Turn the gas bottle's handle clockwise to close the gas supply off to the beer keg.
 3. Turn the green handle attached to the cooler completely clockwise, to close the beer's supply to the beer font.
 
-##4. How to operate ##
+## 4. How to operate ##
 
 ### Link the touch screen to the local host ###
 1. Make sure the iPod touch, the Mac Mini and any mobile device that you want connected to the admin page are all connected to the same wifi network. If there is not a wifi network to connect to, then create a local wireless network on the Mac Mini in the system settings and connect to that network on the iPod touch + admin mobile device.
@@ -212,7 +212,7 @@ Remove the beer line that is attached to the nozzle in the test unit, and put it
 
 There should be two slots inside of the font which will have space for both the LED strip and LED circle. Once the font has been produced, you will need to place the LED circle into its slot for the beer mat and see how many LEDs within the strip will fit for the payment lighting.
 
-##6. Troubleshooting ##
+## 6. Troubleshooting ##
 
 ### Beer equipment ###
 
