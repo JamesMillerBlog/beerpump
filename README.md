@@ -103,7 +103,7 @@ The below diagram is the electronic schematic for how to set up Arduino A which 
 
 * The LED ring is powered by the 5V 10A power supply, the data line of the strip goes into pin 7. Make sure that the ground line is shared across both Arduino's and the power supply unit.
 
-**IMPORTANT: **A 12v power supply is attached to Arduino A's power jack, this raw supply line comes out of the V-in pin. Do not put anything that is powered by 5 volts on this line and do not attach this 12v line to any of the other Arduino pins or the 5v power supply.
+**IMPORTANT: A 12v power supply is attached to Arduino A's power jack, this raw supply line comes out of the V-in pin. Do not put anything that is powered by 5 volts on this line and do not attach this 12v line to any of the other Arduino pins or the 5v power supply.**
 
 ## 3. Beer equipment set up ##
 
