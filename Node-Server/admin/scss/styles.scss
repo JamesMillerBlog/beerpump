@@ -1,0 +1,152 @@
+$admin-button-height:60px;
+$button-background-color:#fff;
+
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+  font: 13px Helvetica, Arial;
+}
+#pintContainer{
+  height: 100px;
+  margin-top:0px;
+  width:98%;
+  margin-left:auto;
+  margin-right:auto;
+}
+#pourPint , #stopPint{
+  width:50%;
+  height:100px;
+  display:block;
+  background-color:red;
+  text-align:center;
+  position:relative;
+  float:left;
+  cursor:pointer;
+}
+#pourPint , #stopPint p{
+  line-height: 100px;
+  font-size: 30px;
+}
+#pourPint{
+  background-color:darkgreen;
+}
+#pourPint:active, #pourPint:hover{
+  background-color:green;
+}
+#stopPint{
+  background-color:darkred;
+}
+#stopPint:hover, #stopPint:active{
+  background-color:red;
+}
+#admin{
+  width:100%;
+  height:362px;
+  position:relative;
+  text-align:center;
+  background-color:#ddd;
+  padding-top:10px;
+}
+
+#admin .button{
+  width:32%;
+  height:$admin-button-height;
+  float:left;
+  cursor:pointer;
+  margin-left:1%;
+  margin-bottom:10px;
+  background-color:$button-background-color;
+}
+
+#admin .button:hover, #admin .button:active{
+  background-color:blue;
+  /*font-weight:bold;*/
+  color:$button-background-color;
+}
+
+#admin .button p {
+  line-height: $admin-button-height;
+  font-size: 15px
+}
+#admin h2{
+  text-align: left;
+  margin-left:15px;
+}
+
+#admin #cleanOut{
+  background-color:black;
+  display: block;
+  width:98%;
+  height:$admin-button-height;
+  color:white;
+}
+
+#admin #cleanOut:hover, #admin #cleanOut:active {
+  background-color:blue;
+  color:#fff;
+}
+
+h1{
+  text-align:center;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-bottom: 10px;
+}
+
+#beerLevel{
+  width:50%;
+  height:30px;
+  float:left;
+  font-size:15px;
+}
+
+form {
+  width:50%;
+  height:30px;
+  float:left;
+}
+
+#systemSettings{
+  margin-top:10px;
+  padding-top:10px;
+  padding-left:10px;
+  background-color:#494949;
+  color:#fff;
+  display:block;
+  height:100px;
+}
+
+#systemSettings h2{
+  letter-spacing: 1.2px;
+  display:inline-block;
+  width:49%;
+}
+
+#settings{
+}
+
+#appSettings{
+	padding:10px;
+	background:#ddd;
+	text-align:Center;
+
+	a{
+		display:inline-block;
+		width:32%;
+		margin:0 0.5%;
+		background:#fff;
+		cursor:pointer;
+		font-size:15px;
+		line-height:60px;
+
+		&:hover{
+			background:blue;
+			color:#fff;
+		}
+	}
+}

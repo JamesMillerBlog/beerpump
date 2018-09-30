@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Beer Admin</title>
+    <link rel="stylesheet" type="text/css" href="/admin/css/styles.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/admin/js/script.js"></script>
+  </head>
+  <body>
+  <h1> Admin Page </h1>
+  <div id = "admin">
+    <div id = "adminHider">
+      <h2> Electronics overide controls </h2>
+      <div id = "allLightsOn" class = "button">
+        <p> All lights on</p>
+      </div>
+      <div id = "makePayment" class = "button">
+        <p>Payment blink</p>
+      </div>
+      <div id = "placeBeerBelow" class = "button">
+        <p>Beer mat blink</p>
+      </div>
+      <div id = "terminateAll" class = "button">
+        <p>All lights off</p>
+      </div>
+      <div id = "iZettleFullLight" class = "button">
+        <p>Payment light up</p>
+      </div>
+      <div id = "beerMatFullLight" class = "button">
+        <p>Beer mat light up</p>
+      </div>
+      <div id = "cleanOut" class = "button">
+        <p>Clean out pipes</p>
+      </div>
+    </div>
+    <div id="pintContainer">
+      <div id="pourPint">
+        <p>Pour pint</p>
+      </div>
+      <div id="stopPint">
+        <p>Stop pint</p>
+      </div>
+    </div>
+  </div>
+  <div id = "systemSettings">
+    <h2 id = "system">Sensor readings</h2>
+    <h2 id = "settings">Sensor settings</h2>
+    <div id = "beerLevel">
+      <p> Volume of beer poured: <span id = "beerHeight"> 0ml </span> </p>
+    </div>
+    <form action = "beerSettings">
+      Volume of beer set to pour (ml): <br /> <input type = "number" name ="height" value = "550">
+      <input type ="submit" value = "Submit">
+      <br />
+      <span id = "result"></span>
+    </form>
+  </div>
+	<div id="appSettings">
+		<a class="btn_app_refresh">Refresh App</a>
+		<a class="btn_app_reset_pump">Reset Pump</a>
+	</div>
+  </body>
+</html>

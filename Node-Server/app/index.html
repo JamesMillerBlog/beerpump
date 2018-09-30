@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+
+
+
+	<!-- TITLE -->
+	<title>Beer Pump</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/app/css/styles.css?v=3">
+
+	<!-- VIEWPORT -->
+	<meta name="viewport" content="width=568px, initial-scale=1">
+
+	<!-- MOBILE APP META -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" sizes="120x120" href="http://apps.kerve.com/beerpump/app/touch-icon-iphone-retina.png">
+	<!--<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-startup-image" href="assets/images/startup.png">
+	<link rel="apple-touch-icon" href="/assets/images/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/touch-icon-iphone-retina.png">-->
+
+
+
+</head>
+<body>
+
+
+
+	<!-- MAIN -->
+	<div id="wrapper">
+		<div id="pages">
+			<div class="page" id="page_1">
+				<div class="copy">Touch me to buy one has animation in the background</div>
+				<div id="slider">
+					<div class="slide slide1"></div>
+					<div class="slide slide2"></div>
+					<div class="slide slide3"></div>
+					<div class="slide slide4"></div>
+					<div class="slide slide5"></div>
+					<div class="slide slide6"></div>
+					<div class="slide slide7"></div>
+				</div>
+			</div>
+			<div class="page" id="page_2">
+				<div class="copy">Loading...</div>
+				<div class="loading"></div>
+			</div>
+			<div class="page" id="page_3">
+				<div class="copy">Please use the contactless reader below</div>
+			</div>
+			<div class="page" id="page_4">
+				<div class="copy">We're processing your payment</div>
+				<div class="loading"></div>
+			</div>
+			<div class="page" id="page_5">
+				<div class="copy">Thank you</div>
+			</div>
+			<div class="page" id="page_6">
+				<div class="copy">Place glass below</div>
+				<div class="buttons">
+					<a class="btn_pour">Pour</a>
+				</div>
+			</div>
+			<div class="page" id="page_7">
+				<div class="copy">Enjoy Resonsibly</div>
+				<div class="buttons">
+					<a class="btn_stop">Emergency Stop</a>
+				</div>
+			</div>
+			<div class="page" id="page_8">
+				<div class="copy">We've stopped the pour</div>
+				<div class="buttons">
+					<a class="btn_cancel">Cancel Pint</a>
+					<a class="btn_continue">Continue</a>
+				</div>
+			</div>
+			<div class="page" id="page_9">
+				<div class="copy">Please try another card</div>
+			</div>
+			<div class="page" id="page_10">
+				<div class="copy">Card declined</div>
+				<div class="buttons">
+					<a class="btn btn_restart">Continue</a>
+				</div>
+			</div>
+			<div class="page" id="page_11">
+				<div class="copy">Sorry, there was a problem</div>
+				<div class="buttons">
+					<a class="btn btn_restart">Continue</a>
+				</div>
+			</div>
+			<div class="page" id="page_12">
+				<div class="copy">Thanks</div>
+			</div>
+			<div class="page" id="page_error">
+				<div class="copy">Error</div>
+			</div>
+			<div class="page" id="page_bar"></div>
+			<div id="btn_sounds">Enable Sounds</div>
+		</div>
+	</div>
+	<div id="console"></div>
+
+	<!-- ADMIN -->
+	<div id="admin">
+		<a class="btn_pour">Pour Pint</a>
+		<a class="btn_stop">Stop Pint</a>
+		<div class="clearme"></div>
+		<div id="beerheight">0ml</div>
+	</div>
+
+
+
+	<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- SOCKET.IO -->
+	<script src="/app/js/socket.io.js"></script>
+
+	<!-- CUSTOM SCRIPTS -->
+	<script src="/app/js/scripts.socket.js?v=3"></script>
+	<script src="/app/js/scripts.js?v=3"></script>
+
+
+
+</body>
+</html>
