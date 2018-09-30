@@ -150,7 +150,7 @@ The below image shows the order of how the beer serving equipment is set up, ins
 1. To access the admin page, open the same url on the admin mobile device - but add the string "/admin" at the end (this will look something like: http://192.168.0.57:4000/admin).
 2. The admin page has over-ride commands to control the beer fonts valve and LEDs, these can be used by touch the buttons on the interface.
 
-** Notes **
+**Notes **
 
 As well as the override commands, there is a "Clean Out Pipes" function that pours 100ml of beer, this should be used when the beer pump has not been used for an hour or so - to help prevent foam.
 
@@ -160,7 +160,7 @@ Making changes to the code is made very simple, as gulp has been configured to a
 
 ### Front End ###
 
-** How to edit the front end code **
+**How to edit the front end code **
 
 1. Make html changes to the touch screen on 'index.html' in the "Node-Server/app" directory.
 
@@ -181,21 +181,21 @@ Making changes to the code is made very simple, as gulp has been configured to a
 The only sockets that should be included in the front end for the touch screen are the 4 circled in the above image from the admin page, and they should only be called in the user journey as numbered (call the socket attached to the "Payment blink" button when a payment is required, then call the socket attached to the "Beer mat blink" button when the user needs to put their beer on the mat, etc).
 
 
-** How to edit the back end code **
+**How to edit the back end code **
 
 Open the "index.js" file located in the "Node-Server" directory.
 
-** How to put code onto a publicly accessible server **
+**How to put code onto a publicly accessible server **
 
 This is not necessary for the project, but if we wanted to do this we would need to run this application on a server that could support node. This would be something that Ben could help with.
 
 ### Integrate hardware into the beer font ###
 
-** Beer Line **
+**Beer Line **
 
 Remove the beer line that is attached to the nozzle in the test unit, and put it into the nozzle on the new beer font.
 
-** LEDs **
+**LEDs **
 
 There should be two slots inside of the font which will have space for both the LED strip and LED circle. Once the font has been produced, you will need to place the LED circle into its slot for the beer mat and see how many LEDs within the strip will fit for the payment lighting.
 
@@ -203,27 +203,27 @@ There should be two slots inside of the font which will have space for both the 
 
 ### Beer equipment ###
 
-** Too much foam per pint **
+**Too much foam per pint **
 
 The green labelled connector which is attached to a pipe, located at the back of the cooler is a valve. By turning the connector clockwise slowly, this will slightly close the valve, reduce the speed of the beer pouring from the font and therefore help reduce the foam.
 
-** Foam sputtering out of nozzle **
+**Foam sputtering out of nozzle **
 
 This is because the keg is empty, replace the keg to resolve this issue
 
-**  Beer tap not pouring beer **
+**Beer tap not pouring beer **
 
 When the handle for the beer tap is opened, this will not make beer pour as there is an electronic valve stopping the liquid in the beer line. To pour beer, click on the "Pour Pint" button on the touch screen.
 
-** Pour Pint button is not pouring a pint **
+**Pour Pint button is not pouring a pint **
 
 If clicking on the "Pour Pint" button is not pouring a pint, then check if the page has fully loaded. If it is not, then this means that the sockets have not been initiated and back end will not be receiving any socket messages to activate the valve. Refresh the web page manually to resolve this.
 
-** Web sockets are working, but beer is still not pouring **
+**Web sockets are working, but beer is still not pouring **
 
 If web sockets are working correctly then check if the green labelled connector which located at the back of the cooler is open, by turning the connector anti-clockwise.
 
-** How to remove and replace a keg **
+**How to remove and replace a keg **
 
 1. Turn the handle on the gas canister clockwise to close off the gas supply.
 
@@ -233,13 +233,13 @@ If web sockets are working correctly then check if the green labelled connector 
 
 4.Turn the gas canister handle + green labelled cooler connector anti clockwise and the beer can now be poured from the new keg.
 
-** How to detach the beer line pipes **
+**How to detach the beer line pipes **
 
 1. Push the pipe into the pipe connector
 2. Push the dark grey ring down into the connector
 3. Pull the pipe out of the connector whilst pushing the dark grey ring down.
 
-** How to replace a gas canister **
+**How to replace a gas canister **
 
 1. Turn the handle on the gas canister clockwise as tightly as possible to completely close off the gas supply.
 2. Turn the cog shaped handle which connects the gas supply to the gas regulator anti-clockwise to detach it from the gas canister.
@@ -248,14 +248,14 @@ If web sockets are working correctly then check if the green labelled connector 
 
 ### Code ###
 
-** Terminal error when I try to pour a pint **
+**Terminal error when I try to pour a pint **
 
 If terminal displays an error like: "TypeError: Cannot read property 'write' of undefined", then this means that the Arduino is not plugged in, plug the Arduino into the computer USB and this will resolve the issue.
 
-** Web page not refreshing when restart the node server **
+**Web page not refreshing when restart the node server **
 
 Sometimes when the node server is restarted, the web page does not auto-refresh properly - in this scenario you will need to press the refresh button.
 
-** I want to run the application without gulp **
+**I want to run the application without gulp **
 
 In terminal navigate to "Node-Server" directory and then type "node index.js". This will launch a local server which you can access by typing "http://localhost:3000" into your browser url bar.
